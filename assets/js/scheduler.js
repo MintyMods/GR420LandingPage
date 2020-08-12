@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function(){
                             "day",
                             "week",
                             "month",
-                            "month",
+                            "year",
                             "spacer",
                             "today"
                         ]
