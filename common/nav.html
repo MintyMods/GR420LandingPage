@@ -12,3 +12,15 @@
 <li><a href="#" class="icon brands fa-itunes"><span class="label">iTunes</span></a></li>
 <li><a href="https://github.com/Growroom420" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 </ul>
+<script>
+	var url = document.location.href;
+	if (url.indexOf('index.html') > -1) {
+		$('#nav_index').addClass('active');
+	} else if (url.indexOf('community.html') > -1) {
+		$('#nav_community').addClass('active');
+	} else if (url.indexOf('tutorials.html') > -1) {
+		$('#nav_tutorials').addClass('active');
+	} else if (url.indexOf('compititions.html') > -1) {
+		$('#nav_compititions').addClass('active');
+	}
+</script>
