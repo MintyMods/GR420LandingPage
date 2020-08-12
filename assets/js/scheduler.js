@@ -76,10 +76,10 @@ window.addEventListener("DOMContentLoaded", function(){
     }
 
     scheduler.config.responsive_lightbox = true;
-    scheduler.config.lightbox.sections = [
-        {name:"description", height:200, map_to:"text", type:"textarea", focus:true},
-        {name:"time", height:72, type:"calendar_time", map_to:"auto" }
-    ];
+    // scheduler.config.lightbox.sections = [
+    //     {name:"description", height:200, map_to:"text", type:"textarea", focus:true},
+    //     {name:"time", height:72, type:"calendar_time", map_to:"auto" }
+    // ];
 
     resetConfig();
     scheduler.attachEvent("onBeforeViewChange", resetConfig);
