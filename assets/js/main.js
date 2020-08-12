@@ -15,17 +15,7 @@
 			});
 		});
 	})
-	// Set active tab
-	var url = document.location.href;
-	if (url.indexOf('index.html') > -1) {
-		$('#nav_index').addClass('active');
-	} else if (url.indexOf('community.html') > -1) {
-		$('#nav_community').addClass('active');
-	} else if (url.indexOf('tutorials.html') > -1) {
-		$('#nav_tutorials').addClass('active');
-	} else if (url.indexOf('compititions.html') > -1) {
-		$('#nav_compititions').addClass('active');
-	}
+
 
 	var	$window = $(window),
 		$body = $('body'),
