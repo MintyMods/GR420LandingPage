@@ -46,6 +46,7 @@ window.addEventListener("DOMContentLoaded", function(){
                 "day",
                 "week",
                 "month",
+                "year",
                 "date",
                 "prev",
                 "today",
@@ -78,10 +79,7 @@ window.addEventListener("DOMContentLoaded", function(){
     resetConfig();
     scheduler.attachEvent("onBeforeViewChange", resetConfig);
     scheduler.attachEvent("onSchedulerResize", resetConfig);
-
-
-
-    scheduler.init('scheduler_here',new Date(2018,0,1),"week");
+    scheduler.init('compitition_scheduler', new Date(), "month");
     // scheduler.load("../common/events.json");
 
     document.querySelector(".add_event_button").addEventListener("click", function(){
