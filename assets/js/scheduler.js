@@ -79,35 +79,6 @@ window.addEventListener("DOMContentLoaded", function(){
     scheduler.attachEvent("onSchedulerResize", resetConfig);
 
 
-    // demo data
-    var alert_opts = [
-        { key: 1, label: 'None' },
-        { key: 2, label: 'On start date' },
-        { key: 3, label: '1 day before' }
-    ];
-
-    var users = [
-        { key: 1, label: 'George' },
-        { key: 2, label: 'Nataly' },
-        { key: 3, label: 'Diana' }
-    ];
-
-    scheduler.locale.labels.section_text = 'Text';
-    scheduler.locale.labels.section_time = 'Time';
-    scheduler.locale.labels.section_select = 'Alert';
-    scheduler.locale.labels.section_template = 'Details';
-    scheduler.locale.labels.section_userselect = "Participants";
-    scheduler.locale.labels.section_fruitselect = "Fruits";
-    scheduler.locale.labels.section_checkme = "Check me";
-    scheduler.locale.labels.section_priority = 'Priority';
-
-    scheduler.config.lightbox.sections=[
-        { name:"text", height:35, map_to:"text", type:"textarea" , focus:true },
-        { name:"userselect", height: 35, map_to:"user_id", type:"multiselect", options: users, vertical:false },
-        { name:"select", height:35, map_to:"type", type:"select", options:alert_opts},
-        { name:"recurring", height:115, type:"recurring", map_to:"rec_type", button:"recurring"},
-        { name:"time", height:40, type:"time", map_to:"auto" },
-    ];
 
     scheduler.init('scheduler_here',new Date(2018,0,1),"week");
     // scheduler.load("../common/events.json");
