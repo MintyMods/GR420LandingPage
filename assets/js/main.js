@@ -6,6 +6,11 @@
 
 (function($) {
 
+
+debugger;
+	$('#nav').load("./common/nav.html");
+
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
