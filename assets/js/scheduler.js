@@ -20,20 +20,13 @@ window.addEventListener("DOMContentLoaded", function(){
                             "day",
                             "week",
                             "month",
+                            "year",
                             "spacer",
                             "today"
                         ]
                     }
                 ]
             }
-        },
-        templates: {
-            month_scale_date: scheduler.date.date_to_str("%D"),
-            week_scale_date: scheduler.date.date_to_str("%D, %j"),
-            event_bar_date: function(start,end,ev) {
-                return "";
-            }
-            
         }
     };
     var fullView = {
