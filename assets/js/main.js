@@ -7,8 +7,14 @@
 (function($) {
 
 
-debugger;
-	$('#nav').load("./common/nav.html");
+	// Load common code into placeholders
+	$(function(){
+		$("[data-load]").each(function(){
+			$(this).load('./common/' + $(this).data("load"), function(){
+				console.log("loaded " + this);
+			});
+		});
+	})
 
 
 	var	$window = $(window),
